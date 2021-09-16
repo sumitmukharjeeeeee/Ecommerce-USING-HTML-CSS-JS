@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Navbar Styling Starts */
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #f5f5f5;
+    z-index: 9;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10vw;
+}
+
+.brand {
+    height: 60px;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.search {
+    display: flex;
+    width: 500px;
+}
+
+.search-box {
+    height: 40px;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border: 1px solid #d2d2d2;
+    width: 80%;
+    text-transform: capitalize;
+    outline: none;
+    background: none;
+    color: #a9a9a9;
+}
+
+.search-btn {
+    width: 20%;
+    height: 40px;
+    background-color: #111;
+    color: white;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-btn::placeholder {
+    color: #4e4c4c;
+}
+
+.nav-items a {
+    margin-left: 20px;
+}
+
+.nav-items a img {
+    width: 30px;
+}
+
+.link-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    list-style: none;
+    padding: 11px 11vw;
+    border-top: 1px solid #d1d1d1;
+
+}
+
+.link {
+    text-transform: capitalize;
+    padding: 0 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #383838;
+    opacity: 0.5;
+    transform: 0.5s;
+}
+
+.link:hover {
+    opacity: 1;
+}
+
+/* Navbar Styling Done */

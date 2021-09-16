@@ -1,18 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+// Navbar should be in all pages.So instead of copying the code in all
+//html pages we can create it dynamically.
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopKart - Online Shopping</title>
-    <link rel="stylesheet" href="./css/home.css">
-</head>
+//Selecting Class of navbar First
+const createNav = () => {
+    let nav = document.querySelector('.navbar');
 
-<body>
-    <!-- Navbar Starts -->
-    <nav class="navbar">
-        <div class="nav">
+
+//Going into inner html
+
+new.innerHTML = `<div class="nav">
             <img src="./img/dark-logo.png" alt="" class="brand">
             <div class="nav-items">
                 <div class="search">
@@ -30,11 +26,7 @@
             <li class="link-item"><a href="" class="link">Men</a></li>
             <li class="link-item"><a href="" class="link">Kids</a></li>
             <li class="link-item"><a href="" class="link">Accessories</a></li>
-        </ul>
-        <!-- Links Ends -->
-    </nav>
-    <!-- Navbar Ends -->
+        </ul>`;
+}
 
-</body>
-
-</html>
+createNav();
