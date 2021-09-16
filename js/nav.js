@@ -8,7 +8,7 @@ const createNav = () => {
 
 //Going into inner html
 
-new.innerHTML = `<div class="nav">
+nav.innerHTML = `<div class="nav">
             <img src="./img/dark-logo.png" alt="" class="brand">
             <div class="nav-items">
                 <div class="search">
@@ -19,7 +19,6 @@ new.innerHTML = `<div class="nav">
                 <a href="#"><img src="./img/user.png" alt=""></a>
             </div>
         </div>
-        <!-- Links Starts -->
         <ul class="link-container">
             <li class="link-item"><a href="" class="link">Home</a></li>
             <li class="link-item"><a href="" class="link">Women</a></li>
